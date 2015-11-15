@@ -2,6 +2,7 @@
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
         <li><?= $this->Html->link(__('New Job'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link('View Jobs From external sites',"https://jobs.github.com/positions?description=python&location=new+york") ?></li>
     </ul>
 </div>
 <div class="job index large-10 medium-9 columns">
@@ -21,7 +22,7 @@
         <tr>
             <td><?= h($job->name) ?></td>
             <td><?= h($job->statuses($job->status)) ?></td>
-            <td><?= h($job->link) ?></td>
+            <td><?= $this->Html->link(h($job->link)) ?></td>
             <td><?= h($job->applied_date) ?></td>
             <td class="actions">
                 <?= $this->Html->link(__('View'), ['action' => 'view', $job->id]) ?>

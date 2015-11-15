@@ -14,7 +14,7 @@
             <h6 class="subheader"><?= __('Name') ?></h6>
             <p><?= h($job->name) ?></p>
             <h6 class="subheader"><?= __('Link') ?></h6>
-            <p><?= h($job->link) ?></p>
+            <p><?= $this->Html->link(h($job->link)) ?></p>
         </div>
         <div class="large-2 columns numbers end">
             <h6 class="subheader"><?= __('Status') ?></h6>
