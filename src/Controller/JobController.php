@@ -151,4 +151,8 @@ class JobController extends AppController
     	}
     	return parent::isAuthorized($user);
     }
+    public function listjobs()
+    {
+    	//return $this->redirect(['action' => 'add']);
+    }
 }

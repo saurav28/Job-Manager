@@ -2,7 +2,7 @@
     <h3><?= __('Actions') ?></h3>
     <ul class="side-nav">
         <li><?= $this->Html->link(__('New Job'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link('View Jobs From external sites',"https://jobs.github.com/positions?description=python&location=new+york") ?></li>
+        <li><?= $this->Html->link(__('View Jobs From external sites'),['action'=> 'listjobs']) ?></li>
     </ul>
 </div>
 <div class="job index large-10 medium-9 columns">
